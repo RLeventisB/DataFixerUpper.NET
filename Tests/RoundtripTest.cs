@@ -1,18 +1,18 @@
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
-import org.junit.Test;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.codecs.RecordCodecBuilder;
+using org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+using java.util.Arrays;
+using java.util.List;
+using java.util.Map;
+using java.util.Random;
+using java.util.function.Function;
+using java.util.stream.Collectors;
+using java.util.stream.IntStream;
 
-import static org.junit.Assert.assertEquals;
+using static org.junit.Assert.assertEquals;
 
 public class RoundtripTest {
     private enum Day {

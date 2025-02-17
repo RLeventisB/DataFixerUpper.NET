@@ -1,21 +1,21 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.ImmutableMap;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
-import org.junit.Test;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Serialization.codecs.RecordCodecBuilder;
+using org.junit.Test;
 
-import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Optional;
+using javax.annotation.Nullable;
+using java.util.ArrayList;
+using java.util.Iterator;
+using java.util.List;
+using java.util.Locale;
+using java.util.Map;
+using java.util.Optional;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+using static org.junit.Assert.assertEquals;
+using static org.junit.Assert.assertTrue;
 
 public class CodecTests {
     private static final Codec<String> TO_LOWER_CASE = Codec.STRING.xmap(s -> s.toLowerCase(Locale.ROOT), s -> s.toLowerCase(Locale.ROOT));

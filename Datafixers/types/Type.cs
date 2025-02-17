@@ -1,36 +1,36 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types;
+namespace DataFixerUpper.Datafixers.types;
 
-import com.google.common.collect.Maps;
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.FieldFinder;
-import com.mojang.datafixers.OpticFinder;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypeRewriteRule;
-import com.mojang.datafixers.Typed;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.View;
-import com.mojang.datafixers.functions.Functions;
-import com.mojang.datafixers.functions.PointFreeRule;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.types.families.RecursiveTypeFamily;
-import com.mojang.datafixers.types.templates.TaggedChoice;
-import com.mojang.datafixers.types.templates.TypeTemplate;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Dynamic;
-import com.mojang.serialization.DynamicOps;
+using com.google.common.collect.Maps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.FieldFinder;
+using DataFixerUpper.Datafixers.OpticFinder;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypeRewriteRule;
+using DataFixerUpper.Datafixers.Typed;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.View;
+using DataFixerUpper.Datafixers.functions.Functions;
+using DataFixerUpper.Datafixers.functions.PointFreeRule;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.types.families.RecursiveTypeFamily;
+using DataFixerUpper.Datafixers.types.templates.TaggedChoice;
+using DataFixerUpper.Datafixers.types.templates.TypeTemplate;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.Dynamic;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import javax.annotation.Nullable;
-import java.util.Map;
-import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.atomic.AtomicReference;
+using javax.annotation.Nullable;
+using java.util.Map;
+using java.util.Optional;
+using java.util.concurrent.CompletableFuture;
+using java.util.concurrent.atomic.AtomicReference;
 
 public abstract class Type<A> implements App<Type.Mu, A> {
     private static final Map<RewriteCacheKey, CompletableFuture<Optional<? extends RewriteResult<?, ?>>>> PENDING_REWRITE_CACHE = Maps.newConcurrentMap();

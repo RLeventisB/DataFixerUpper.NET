@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
 class IdAdapter<S, T> implements Adapter<S, T, S, T> {
     static final IdAdapter<?, ?> INSTANCE = new IdAdapter<>();

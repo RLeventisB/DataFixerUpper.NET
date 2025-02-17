@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.util;
+namespace DataFixerUpper.Datafixers.util;
 
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.CocartesianLike;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.Traversable;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.CocartesianLike;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.Traversable;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.BiFunction;
+using java.util.function.Consumer;
+using java.util.function.Function;
 
 public abstract class Either<L, R> implements App<Either.Mu<R>, L> {
     public static final class Mu<R> implements K1 {}

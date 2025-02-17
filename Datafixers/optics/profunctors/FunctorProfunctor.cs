@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics.profunctors;
+namespace DataFixerUpper.Datafixers.optics.profunctors;
 
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.kinds.Kind2;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.kinds.Kind2;
 
 public interface FunctorProfunctor<T extends K1, P extends K2, Mu extends FunctorProfunctor.Mu<T>> extends Kind2<P, Mu> {
     static <T extends K1, P extends K2, Mu extends FunctorProfunctor.Mu<T>> FunctorProfunctor<T, P, Mu> unbox(final App<Mu, P> proofBox) {

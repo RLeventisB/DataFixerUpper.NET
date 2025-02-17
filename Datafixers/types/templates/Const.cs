@@ -1,23 +1,23 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.templates;
+namespace DataFixerUpper.Datafixers.types.templates;
 
-import com.google.common.collect.ImmutableSet;
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.FamilyOptic;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.optics.profunctors.AffineP;
-import com.mojang.datafixers.optics.profunctors.Profunctor;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.families.TypeFamily;
-import com.mojang.datafixers.util.Either;
-import com.mojang.serialization.Codec;
+using com.google.common.collect.ImmutableSet;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.FamilyOptic;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.optics.profunctors.AffineP;
+using DataFixerUpper.Datafixers.optics.profunctors.Profunctor;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.families.TypeFamily;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Serialization.Codec;
 
-import javax.annotation.Nullable;
-import java.util.Objects;
-import java.util.function.IntFunction;
+using javax.annotation.Nullable;
+using java.util.Objects;
+using java.util.function.IntFunction;
 
 public record Const(Type<?> type) implements TypeTemplate {
     @Override

@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.base.Suppliers;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
+using com.google.common.base.Suppliers;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.codecs.RecordCodecBuilder;
 
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.function.UnaryOperator;
-import java.util.stream.Stream;
+using java.util.function.BiFunction;
+using java.util.function.Consumer;
+using java.util.function.Function;
+using java.util.function.Supplier;
+using java.util.function.UnaryOperator;
+using java.util.stream.Stream;
 
 public abstract class MapCodec<A> extends CompressorHolder implements MapDecoder<A>, MapEncoder<A> {
     /**

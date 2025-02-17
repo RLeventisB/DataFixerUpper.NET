@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types;
+namespace DataFixerUpper.Datafixers.types;
 
-import com.mojang.datafixers.types.templates.TypeTemplate;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.Decoder;
-import com.mojang.serialization.Encoder;
+using DataFixerUpper.Datafixers.types.templates.TypeTemplate;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.Decoder;
+using DataFixerUpper.Serialization.Encoder;
 
-import java.util.Objects;
-import java.util.function.Function;
+using java.util.Objects;
+using java.util.function.Function;
 
 public final class Func<A, B> extends Type<Function<A, B>> {
     protected final Type<A> first;

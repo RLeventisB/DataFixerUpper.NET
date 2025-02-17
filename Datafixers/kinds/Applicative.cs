@@ -1,24 +1,24 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import com.mojang.datafixers.util.Function10;
-import com.mojang.datafixers.util.Function11;
-import com.mojang.datafixers.util.Function12;
-import com.mojang.datafixers.util.Function13;
-import com.mojang.datafixers.util.Function14;
-import com.mojang.datafixers.util.Function15;
-import com.mojang.datafixers.util.Function16;
-import com.mojang.datafixers.util.Function3;
-import com.mojang.datafixers.util.Function4;
-import com.mojang.datafixers.util.Function5;
-import com.mojang.datafixers.util.Function6;
-import com.mojang.datafixers.util.Function7;
-import com.mojang.datafixers.util.Function8;
-import com.mojang.datafixers.util.Function9;
+using DataFixerUpper.Datafixers.util.Function10;
+using DataFixerUpper.Datafixers.util.Function11;
+using DataFixerUpper.Datafixers.util.Function12;
+using DataFixerUpper.Datafixers.util.Function13;
+using DataFixerUpper.Datafixers.util.Function14;
+using DataFixerUpper.Datafixers.util.Function15;
+using DataFixerUpper.Datafixers.util.Function16;
+using DataFixerUpper.Datafixers.util.Function3;
+using DataFixerUpper.Datafixers.util.Function4;
+using DataFixerUpper.Datafixers.util.Function5;
+using DataFixerUpper.Datafixers.util.Function6;
+using DataFixerUpper.Datafixers.util.Function7;
+using DataFixerUpper.Datafixers.util.Function8;
+using DataFixerUpper.Datafixers.util.Function9;
 
-import java.util.function.BiFunction;
-import java.util.function.Function;
+using java.util.function.BiFunction;
+using java.util.function.Function;
 
 public interface Applicative<F extends K1, Mu extends Applicative.Mu> extends Functor<F, Mu> {
     static <F extends K1, Mu extends Applicative.Mu> Applicative<F, Mu> unbox(final App<Mu, F> proofBox) {

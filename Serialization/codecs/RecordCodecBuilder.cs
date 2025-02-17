@@ -1,27 +1,27 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.util.Function3;
-import com.mojang.datafixers.util.Function4;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Decoder;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.Encoder;
-import com.mojang.serialization.Lifecycle;
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.MapDecoder;
-import com.mojang.serialization.MapEncoder;
-import com.mojang.serialization.MapLike;
-import com.mojang.serialization.RecordBuilder;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.util.Function3;
+using DataFixerUpper.Datafixers.util.Function4;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.Decoder;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.Encoder;
+using DataFixerUpper.Serialization.Lifecycle;
+using DataFixerUpper.Serialization.MapCodec;
+using DataFixerUpper.Serialization.MapDecoder;
+using DataFixerUpper.Serialization.MapEncoder;
+using DataFixerUpper.Serialization.MapLike;
+using DataFixerUpper.Serialization.RecordBuilder;
 
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.stream.Stream;
+using java.util.function.BiFunction;
+using java.util.function.Function;
+using java.util.stream.Stream;
 
 public final class RecordCodecBuilder<O, F> implements App<RecordCodecBuilder.Mu<O>, F> {
     public static final class Mu<O> implements K1 {}

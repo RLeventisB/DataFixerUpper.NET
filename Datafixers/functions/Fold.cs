@@ -1,26 +1,26 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.google.common.collect.Maps;
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.View;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.families.Algebra;
-import com.mojang.datafixers.types.families.ListAlgebra;
-import com.mojang.datafixers.types.families.RecursiveTypeFamily;
-import com.mojang.datafixers.types.templates.RecursivePoint;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.DynamicOps;
+using com.google.common.collect.Maps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.View;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.families.Algebra;
+using DataFixerUpper.Datafixers.types.families.ListAlgebra;
+using DataFixerUpper.Datafixers.types.families.RecursiveTypeFamily;
+using DataFixerUpper.Datafixers.types.templates.RecursivePoint;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.function.IntFunction;
+using java.util.ArrayList;
+using java.util.List;
+using java.util.Map;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.Function;
+using java.util.function.IntFunction;
 
 final class Fold<A, B> extends PointFree<Function<A, B>> {
     private static final Map<HmapCacheKey, IntFunction<RewriteResult<?, ?>>> HMAP_CACHE = Maps.newConcurrentMap();

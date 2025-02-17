@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Stream;
+using java.util.ArrayList;
+using java.util.List;
+using java.util.function.Function;
+using java.util.stream.Stream;
 
 public interface MapEncoder<A> extends Keyable {
     <T> RecordBuilder<T> encode(A input, DynamicOps<T> ops, RecordBuilder<T> prefix);

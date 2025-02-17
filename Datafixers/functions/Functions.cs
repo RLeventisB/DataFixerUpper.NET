@@ -1,16 +1,16 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.families.Algebra;
-import com.mojang.datafixers.types.templates.RecursivePoint;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.families.Algebra;
+using DataFixerUpper.Datafixers.types.templates.RecursivePoint;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.function.Function;
+using java.util.function.Function;
 
 public abstract class Functions {
     @SuppressWarnings("unchecked")

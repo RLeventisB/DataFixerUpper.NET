@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import com.mojang.datafixers.FunctionType;
+using DataFixerUpper.Datafixers.FunctionType;
 
 public interface Representable<T extends K1, C, Mu extends Representable.Mu> extends Functor<T, Mu> {
     static <F extends K1, C, Mu extends Representable.Mu> Representable<F, C, Mu> unbox(final App<Mu, F> proofBox) {

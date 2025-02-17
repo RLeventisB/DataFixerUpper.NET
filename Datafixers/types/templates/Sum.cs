@@ -1,31 +1,31 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.templates;
+namespace DataFixerUpper.Datafixers.types.templates;
 
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.FamilyOptic;
-import com.mojang.datafixers.FunctionType;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypeRewriteRule;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.optics.Traversal;
-import com.mojang.datafixers.optics.profunctors.TraversalP;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.families.RecursiveTypeFamily;
-import com.mojang.datafixers.types.families.TypeFamily;
-import com.mojang.datafixers.util.Either;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DynamicOps;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.FamilyOptic;
+using DataFixerUpper.Datafixers.FunctionType;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypeRewriteRule;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.optics.Traversal;
+using DataFixerUpper.Datafixers.optics.profunctors.TraversalP;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.families.RecursiveTypeFamily;
+using DataFixerUpper.Datafixers.types.families.TypeFamily;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import javax.annotation.Nullable;
-import java.util.Optional;
-import java.util.function.IntFunction;
+using javax.annotation.Nullable;
+using java.util.Optional;
+using java.util.function.IntFunction;
 
 public record Sum(TypeTemplate f, TypeTemplate g) implements TypeTemplate {
     @Override

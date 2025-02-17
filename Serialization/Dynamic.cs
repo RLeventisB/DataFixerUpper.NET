@@ -1,21 +1,21 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.ImmutableMap;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import javax.annotation.Nullable;
-import java.nio.ByteBuffer;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.function.UnaryOperator;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+using javax.annotation.Nullable;
+using java.nio.ByteBuffer;
+using java.util.Map;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.Function;
+using java.util.function.UnaryOperator;
+using java.util.stream.IntStream;
+using java.util.stream.LongStream;
+using java.util.stream.Stream;
 
 @SuppressWarnings("unused")
 public class Dynamic<T> extends DynamicLike<T> {

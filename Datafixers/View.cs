@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.functions.Functions;
-import com.mojang.datafixers.functions.PointFree;
-import com.mojang.datafixers.functions.PointFreeRule;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.types.Func;
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.functions.Functions;
+using DataFixerUpper.Datafixers.functions.PointFree;
+using DataFixerUpper.Datafixers.functions.PointFreeRule;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.types.Func;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.Optional;
-import java.util.function.Function;
+using java.util.Optional;
+using java.util.function.Function;
 
 public record View<A, B>(PointFree<Function<A, B>> function) implements App2<View.Mu, A, B> {
     static final class Mu implements K2 {}

@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.util.function.Function;
+using java.util.function.Function;
 
 public interface CartesianLike<T extends K1, C, Mu extends CartesianLike.Mu> extends Functor<T, Mu>, Traversable<T, Mu> {
     static <F extends K1, C, Mu extends CartesianLike.Mu> CartesianLike<F, C, Mu> unbox(final App<Mu, F> proofBox) {

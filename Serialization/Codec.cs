@@ -1,39 +1,39 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.base.Suppliers;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.datafixers.util.Unit;
-import com.mojang.serialization.codecs.CompoundListCodec;
-import com.mojang.serialization.codecs.DispatchedMapCodec;
-import com.mojang.serialization.codecs.EitherCodec;
-import com.mojang.serialization.codecs.EitherMapCodec;
-import com.mojang.serialization.codecs.KeyDispatchCodec;
-import com.mojang.serialization.codecs.ListCodec;
-import com.mojang.serialization.codecs.OptionalFieldCodec;
-import com.mojang.serialization.codecs.PairCodec;
-import com.mojang.serialization.codecs.PairMapCodec;
-import com.mojang.serialization.codecs.PrimitiveCodec;
-import com.mojang.serialization.codecs.SimpleMapCodec;
-import com.mojang.serialization.codecs.UnboundedMapCodec;
-import com.mojang.serialization.codecs.XorCodec;
+using com.google.common.base.Suppliers;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Unit;
+using DataFixerUpper.Serialization.codecs.CompoundListCodec;
+using DataFixerUpper.Serialization.codecs.DispatchedMapCodec;
+using DataFixerUpper.Serialization.codecs.EitherCodec;
+using DataFixerUpper.Serialization.codecs.EitherMapCodec;
+using DataFixerUpper.Serialization.codecs.KeyDispatchCodec;
+using DataFixerUpper.Serialization.codecs.ListCodec;
+using DataFixerUpper.Serialization.codecs.OptionalFieldCodec;
+using DataFixerUpper.Serialization.codecs.PairCodec;
+using DataFixerUpper.Serialization.codecs.PairMapCodec;
+using DataFixerUpper.Serialization.codecs.PrimitiveCodec;
+using DataFixerUpper.Serialization.codecs.SimpleMapCodec;
+using DataFixerUpper.Serialization.codecs.UnboundedMapCodec;
+using DataFixerUpper.Serialization.codecs.XorCodec;
 
-import java.nio.ByteBuffer;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.function.UnaryOperator;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+using java.nio.ByteBuffer;
+using java.util.List;
+using java.util.Map;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.Consumer;
+using java.util.function.Function;
+using java.util.function.Supplier;
+using java.util.function.UnaryOperator;
+using java.util.stream.Collectors;
+using java.util.stream.IntStream;
+using java.util.stream.LongStream;
+using java.util.stream.Stream;
 
 public interface Codec<A> extends Encoder<A>, Decoder<A> {
     @Override

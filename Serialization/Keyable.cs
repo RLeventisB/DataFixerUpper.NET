@@ -1,7 +1,7 @@
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import java.util.function.Supplier;
-import java.util.stream.Stream;
+using java.util.function.Supplier;
+using java.util.stream.Stream;
 
 public interface Keyable {
     <T> Stream<T> keys(DynamicOps<T> ops);

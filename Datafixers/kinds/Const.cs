@@ -1,9 +1,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import java.util.function.BiFunction;
-import java.util.function.Function;
+using java.util.function.BiFunction;
+using java.util.function.Function;
 
 public final class Const<C, T> implements App<Const.Mu<C>, T> {
     public static final class Mu<C> implements K1 {}

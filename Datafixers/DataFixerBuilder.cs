@@ -1,26 +1,26 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.schemas.Schema;
-import com.mojang.datafixers.types.Type;
-import it.unimi.dsi.fastutil.ints.Int2ObjectAVLTreeMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectSortedMap;
-import it.unimi.dsi.fastutil.ints.IntAVLTreeSet;
-import it.unimi.dsi.fastutil.ints.IntIterator;
-import it.unimi.dsi.fastutil.ints.IntSortedSet;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+using DataFixerUpper.Datafixers.schemas.Schema;
+using DataFixerUpper.Datafixers.types.Type;
+using it.unimi.dsi.fastutil.ints.Int2ObjectAVLTreeMap;
+using it.unimi.dsi.fastutil.ints.Int2ObjectSortedMap;
+using it.unimi.dsi.fastutil.ints.IntAVLTreeSet;
+using it.unimi.dsi.fastutil.ints.IntIterator;
+using it.unimi.dsi.fastutil.ints.IntSortedSet;
+using org.slf4j.Logger;
+using org.slf4j.LoggerFactory;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Executor;
-import java.util.function.BiFunction;
-import java.util.stream.Collectors;
+using java.time.Duration;
+using java.time.Instant;
+using java.util.ArrayList;
+using java.util.List;
+using java.util.Set;
+using java.util.concurrent.CompletableFuture;
+using java.util.concurrent.Executor;
+using java.util.function.BiFunction;
+using java.util.stream.Collectors;
 
 public class DataFixerBuilder {
     private static final Logger LOGGER = LoggerFactory.getLogger(DataFixerBuilder.class);

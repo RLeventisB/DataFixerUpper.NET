@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.Functor;
-import com.mojang.datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.Functor;
+using DataFixerUpper.Datafixers.kinds.K1;
 
-import java.util.function.Function;
+using java.util.function.Function;
 
 interface PStore<I, J, X> extends App<PStore.Mu<I, J>, X> {
     final class Mu<I, J> implements K1 {}

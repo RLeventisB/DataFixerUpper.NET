@@ -1,35 +1,35 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.Maps;
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.optics.InjTagged;
-import com.mojang.datafixers.optics.Optic;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.optics.profunctors.Cartesian;
-import com.mojang.datafixers.optics.profunctors.Cocartesian;
-import com.mojang.datafixers.optics.profunctors.Profunctor;
-import com.mojang.datafixers.optics.profunctors.TraversalP;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.templates.TaggedChoice;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.collect.ImmutableList;
+using com.google.common.collect.ImmutableSet;
+using com.google.common.collect.Maps;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.optics.InjTagged;
+using DataFixerUpper.Datafixers.optics.Optic;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.optics.profunctors.Cartesian;
+using DataFixerUpper.Datafixers.optics.profunctors.Cocartesian;
+using DataFixerUpper.Datafixers.optics.profunctors.Profunctor;
+using DataFixerUpper.Datafixers.optics.profunctors.TraversalP;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.templates.TaggedChoice;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
+using java.util.ArrayList;
+using java.util.Collection;
+using java.util.List;
+using java.util.Map;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.Set;
+using java.util.stream.Collectors;
 
 public record TypedOptic<S, T, A, B>(Set<TypeToken<? extends K1>> bounds, List<? extends Element<?, ?, ?, ?>> elements) {
     public TypedOptic(final TypeToken<? extends K1> proofBound, final Type<S> sType, final Type<T> tType, final Type<A> aType, final Type<B> bType, final Optic<?, S, T, A, B> optic) {

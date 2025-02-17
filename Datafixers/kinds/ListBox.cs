@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import com.google.common.collect.ImmutableList;
+using com.google.common.collect.ImmutableList;
 
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+using java.util.List;
+using java.util.function.Function;
+using java.util.stream.Collectors;
 
 public final class ListBox<T> implements App<ListBox.Mu, T> {
     public static final class Mu implements K1 {}

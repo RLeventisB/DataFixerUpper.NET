@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics.profunctors;
+namespace DataFixerUpper.Datafixers.optics.profunctors;
 
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.FunctionType;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.kinds.Traversable;
-import com.mojang.datafixers.optics.Wander;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.FunctionType;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.kinds.Traversable;
+using DataFixerUpper.Datafixers.optics.Wander;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
 
 public interface TraversalP<P extends K2, Mu extends TraversalP.Mu> extends AffineP<P, Mu>/*, Monoidal<P, Mu>*/ {
     static <P extends K2, Proof extends TraversalP.Mu> TraversalP<P, Proof> unbox(final App<Proof, P> proofBox) {

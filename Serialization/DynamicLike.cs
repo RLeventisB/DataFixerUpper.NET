@@ -1,23 +1,23 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.ListBox;
-import com.mojang.datafixers.util.Function3;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.collect.ImmutableList;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.ListBox;
+using DataFixerUpper.Datafixers.util.Function3;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.nio.ByteBuffer;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+using java.nio.ByteBuffer;
+using java.util.List;
+using java.util.Map;
+using java.util.concurrent.atomic.AtomicReference;
+using java.util.function.Function;
+using java.util.stream.Collectors;
+using java.util.stream.IntStream;
+using java.util.stream.LongStream;
+using java.util.stream.Stream;
 
 @SuppressWarnings("unused")
 public abstract class DynamicLike<T> {

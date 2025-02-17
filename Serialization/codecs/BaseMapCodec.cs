@@ -1,22 +1,22 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.google.common.collect.ImmutableMap;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.datafixers.util.Unit;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.Lifecycle;
-import com.mojang.serialization.MapLike;
-import com.mojang.serialization.RecordBuilder;
-import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
-import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Unit;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.Lifecycle;
+using DataFixerUpper.Serialization.MapLike;
+using DataFixerUpper.Serialization.RecordBuilder;
+using it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
+using it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 
-import java.util.Map;
-import java.util.Optional;
-import java.util.stream.Stream;
+using java.util.Map;
+using java.util.Optional;
+using java.util.stream.Stream;
 
 public interface BaseMapCodec<K, V> {
     Codec<K> keyCodec();

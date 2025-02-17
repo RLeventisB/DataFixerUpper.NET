@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
-import com.mojang.datafixers.FunctionType;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.optics.profunctors.Profunctor;
+using DataFixerUpper.Datafixers.FunctionType;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.optics.profunctors.Profunctor;
 
-import java.util.function.Function;
-import java.util.function.Supplier;
+using java.util.function.Function;
+using java.util.function.Supplier;
 
 public final class Procompose<F extends K2, G extends K2, A, B, C> implements App2<Procompose.Mu<F, G>, A, B> {
     public Procompose(final Supplier<App2<F, A, C>> first, final App2<G, C, B> second) {

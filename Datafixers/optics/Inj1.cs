@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
-import com.mojang.datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Either;
 
 public final class Inj1<F, G, F2> implements Prism<Either<F, G>, Either<F2, G>, F, F2> {
     public static final Inj1<?, ?, ?> INSTANCE = new Inj1<>();

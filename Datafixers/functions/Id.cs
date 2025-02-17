@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.function.Function;
+using java.util.function.Function;
 
 final class Id<A> extends PointFree<Function<A, A>> {
     private final Type<Function<A, A>> type;

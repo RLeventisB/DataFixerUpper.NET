@@ -1,20 +1,20 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.datafixers.util.Unit;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.Lifecycle;
-import com.mojang.serialization.RecordBuilder;
+using com.google.common.collect.ImmutableList;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Unit;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.Lifecycle;
+using DataFixerUpper.Serialization.RecordBuilder;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.atomic.AtomicReference;
+using java.util.List;
+using java.util.Objects;
+using java.util.concurrent.atomic.AtomicReference;
 
 public final class CompoundListCodec<K, V> implements Codec<List<Pair<K, V>>> {
     private final Codec<K> keyCodec;

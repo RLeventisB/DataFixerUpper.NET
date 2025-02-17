@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.codecs.FieldDecoder;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.codecs.FieldDecoder;
 
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.stream.Stream;
+using java.util.function.Consumer;
+using java.util.function.Function;
+using java.util.function.Supplier;
+using java.util.stream.Stream;
 
 public interface Decoder<A> {
     <T> DataResult<Pair<A, T>> decode(final DynamicOps<T> ops, final T input);

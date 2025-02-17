@@ -1,19 +1,19 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.types.Func;
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.types.Func;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+using java.util.ArrayList;
+using java.util.Arrays;
+using java.util.Collections;
+using java.util.List;
+using java.util.Optional;
+using java.util.function.Function;
+using java.util.stream.Collectors;
 
 final class Comp<A, B> extends PointFree<Function<A, B>> {
     protected final PointFree<? extends Function<?, ?>>[] functions;

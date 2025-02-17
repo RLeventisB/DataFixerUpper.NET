@@ -1,25 +1,25 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.Lists;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonNull;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonPrimitive;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.collect.Lists;
+using com.google.gson.JsonArray;
+using com.google.gson.JsonElement;
+using com.google.gson.JsonNull;
+using com.google.gson.JsonObject;
+using com.google.gson.JsonPrimitive;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import javax.annotation.Nullable;
-import java.math.BigDecimal;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.UnaryOperator;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+using javax.annotation.Nullable;
+using java.math.BigDecimal;
+using java.util.List;
+using java.util.Map;
+using java.util.Objects;
+using java.util.function.BiConsumer;
+using java.util.function.Consumer;
+using java.util.function.UnaryOperator;
+using java.util.stream.Stream;
+using java.util.stream.StreamSupport;
 
 public class JsonOps implements DynamicOps<JsonElement> {
     public static final JsonOps INSTANCE = new JsonOps(false);

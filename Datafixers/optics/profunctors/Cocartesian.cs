@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics.profunctors;
+namespace DataFixerUpper.Datafixers.optics.profunctors;
 
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.CocartesianLike;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.util.Either;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.CocartesianLike;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.util.Either;
 
 public interface Cocartesian<P extends K2, Mu extends Cocartesian.Mu> extends Profunctor<P, Mu> {
     static <P extends K2, Proof extends Cocartesian.Mu> Cocartesian<P, Proof> unbox(final App<Proof, P> proofBox) {

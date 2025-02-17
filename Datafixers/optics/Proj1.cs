@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Pair;
 
 public final class Proj1<F, G, F2> implements Lens<Pair<F, G>, Pair<F2, G>, F, F2> {
     public static final Proj1<?, ?, ?> INSTANCE = new Proj1<>();

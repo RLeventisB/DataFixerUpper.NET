@@ -1,14 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.mojang.datafixers.types.Func;
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.types.Func;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.Function;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.Function;
 
 final class Apply<A, B> extends PointFree<B> {
     protected final PointFree<Function<A, B>> func;

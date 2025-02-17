@@ -1,16 +1,16 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.google.common.collect.ImmutableList;
-import com.mojang.datafixers.functions.PointFreeRule;
-import com.mojang.datafixers.types.Type;
+using com.google.common.collect.ImmutableList;
+using DataFixerUpper.Datafixers.functions.PointFreeRule;
+using DataFixerUpper.Datafixers.types.Type;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
+using java.util.List;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.Consumer;
+using java.util.function.Supplier;
 
 public interface TypeRewriteRule {
     <A> Optional<RewriteResult<A, ?>> rewrite(final Type<A> type);

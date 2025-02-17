@@ -1,25 +1,25 @@
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableMap;
-import com.mojang.datafixers.util.Pair;
-import it.unimi.dsi.fastutil.bytes.ByteArrayList;
-import it.unimi.dsi.fastutil.bytes.ByteList;
-import it.unimi.dsi.fastutil.ints.IntArrayList;
-import it.unimi.dsi.fastutil.ints.IntList;
-import it.unimi.dsi.fastutil.longs.LongArrayList;
-import it.unimi.dsi.fastutil.longs.LongList;
+using com.google.common.collect.ImmutableList;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Datafixers.util.Pair;
+using it.unimi.dsi.fastutil.bytes.ByteArrayList;
+using it.unimi.dsi.fastutil.bytes.ByteList;
+using it.unimi.dsi.fastutil.ints.IntArrayList;
+using it.unimi.dsi.fastutil.ints.IntList;
+using it.unimi.dsi.fastutil.longs.LongArrayList;
+using it.unimi.dsi.fastutil.longs.LongList;
 
-import javax.annotation.Nullable;
-import java.nio.ByteBuffer;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+using javax.annotation.Nullable;
+using java.nio.ByteBuffer;
+using java.util.LinkedHashMap;
+using java.util.List;
+using java.util.Map;
+using java.util.function.BiConsumer;
+using java.util.function.Consumer;
+using java.util.stream.IntStream;
+using java.util.stream.LongStream;
+using java.util.stream.Stream;
 
 /**
  * Ops for pure Java types.

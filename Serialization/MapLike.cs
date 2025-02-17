@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import javax.annotation.Nullable;
-import java.util.Map;
-import java.util.stream.Stream;
+using javax.annotation.Nullable;
+using java.util.Map;
+using java.util.stream.Stream;
 
 public interface MapLike<T> {
     @Nullable

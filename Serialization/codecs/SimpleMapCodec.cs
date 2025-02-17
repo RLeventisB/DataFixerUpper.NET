@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.Keyable;
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.MapLike;
-import com.mojang.serialization.RecordBuilder;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.Keyable;
+using DataFixerUpper.Serialization.MapCodec;
+using DataFixerUpper.Serialization.MapLike;
+using DataFixerUpper.Serialization.RecordBuilder;
 
-import java.util.Map;
-import java.util.Objects;
-import java.util.stream.Stream;
+using java.util.Map;
+using java.util.Objects;
+using java.util.stream.Stream;
 
 /**
  * Key and value decoded independently, statically known set of keys

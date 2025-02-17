@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.mojang.serialization.codecs.FieldEncoder;
+using DataFixerUpper.Serialization.codecs.FieldEncoder;
 
-import java.util.function.Function;
-import java.util.stream.Stream;
+using java.util.function.Function;
+using java.util.stream.Stream;
 
 public interface Encoder<A> {
     <T> DataResult<T> encode(final A input, final DynamicOps<T> ops, final T prefix);

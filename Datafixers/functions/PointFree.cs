@@ -1,13 +1,13 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import javax.annotation.Nullable;
-import java.util.Optional;
-import java.util.function.Function;
+using javax.annotation.Nullable;
+using java.util.Optional;
+using java.util.function.Function;
 
 public abstract class PointFree<T> {
     private volatile boolean initialized;

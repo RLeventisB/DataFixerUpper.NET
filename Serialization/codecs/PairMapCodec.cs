@@ -1,16 +1,16 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.MapLike;
-import com.mojang.serialization.RecordBuilder;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.MapCodec;
+using DataFixerUpper.Serialization.MapLike;
+using DataFixerUpper.Serialization.RecordBuilder;
 
-import java.util.Objects;
-import java.util.stream.Stream;
+using java.util.Objects;
+using java.util.stream.Stream;
 
 public final class PairMapCodec<F, S> extends MapCodec<Pair<F, S>> {
     private final MapCodec<F> first;

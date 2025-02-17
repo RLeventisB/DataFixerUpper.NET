@@ -1,28 +1,28 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.Functor;
-import com.mojang.datafixers.kinds.IdF;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.kinds.Representable;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.optics.Procompose;
-import com.mojang.datafixers.optics.Wander;
-import com.mojang.datafixers.optics.profunctors.Mapping;
-import com.mojang.datafixers.optics.profunctors.MonoidProfunctor;
-import com.mojang.datafixers.optics.profunctors.Monoidal;
-import com.mojang.datafixers.optics.profunctors.TraversalP;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.Functor;
+using DataFixerUpper.Datafixers.kinds.IdF;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.kinds.Representable;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.optics.Procompose;
+using DataFixerUpper.Datafixers.optics.Wander;
+using DataFixerUpper.Datafixers.optics.profunctors.Mapping;
+using DataFixerUpper.Datafixers.optics.profunctors.MonoidProfunctor;
+using DataFixerUpper.Datafixers.optics.profunctors.Monoidal;
+using DataFixerUpper.Datafixers.optics.profunctors.TraversalP;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import javax.annotation.Nonnull;
-import java.util.function.Function;
-import java.util.function.Supplier;
+using javax.annotation.Nonnull;
+using java.util.function.Function;
+using java.util.function.Supplier;
 
 public interface FunctionType<A, B> extends Function<A, B>, App2<FunctionType.Mu, A, B>, App<FunctionType.ReaderMu<A>, B> {
     final class Mu implements K2 {}

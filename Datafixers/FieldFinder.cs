@@ -1,20 +1,20 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.optics.Adapter;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.optics.Proj1;
-import com.mojang.datafixers.optics.profunctors.Cartesian;
-import com.mojang.datafixers.optics.profunctors.Profunctor;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.templates.Tag;
-import com.mojang.datafixers.types.templates.TaggedChoice;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.optics.Adapter;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.optics.Proj1;
+using DataFixerUpper.Datafixers.optics.profunctors.Cartesian;
+using DataFixerUpper.Datafixers.optics.profunctors.Profunctor;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.templates.Tag;
+using DataFixerUpper.Datafixers.types.templates.TaggedChoice;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import javax.annotation.Nullable;
-import java.util.Objects;
+using javax.annotation.Nullable;
+using java.util.Objects;
 
 public final class FieldFinder<FT> implements OpticFinder<FT> {
     @Nullable

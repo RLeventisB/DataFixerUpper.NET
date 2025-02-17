@@ -1,26 +1,26 @@
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.IdF;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.util.Function10;
-import com.mojang.datafixers.util.Function11;
-import com.mojang.datafixers.util.Function12;
-import com.mojang.datafixers.util.Function13;
-import com.mojang.datafixers.util.Function14;
-import com.mojang.datafixers.util.Function15;
-import com.mojang.datafixers.util.Function16;
-import com.mojang.datafixers.util.Function3;
-import com.mojang.datafixers.util.Function4;
-import com.mojang.datafixers.util.Function5;
-import com.mojang.datafixers.util.Function6;
-import com.mojang.datafixers.util.Function7;
-import com.mojang.datafixers.util.Function8;
-import com.mojang.datafixers.util.Function9;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.IdF;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.util.Function10;
+using DataFixerUpper.Datafixers.util.Function11;
+using DataFixerUpper.Datafixers.util.Function12;
+using DataFixerUpper.Datafixers.util.Function13;
+using DataFixerUpper.Datafixers.util.Function14;
+using DataFixerUpper.Datafixers.util.Function15;
+using DataFixerUpper.Datafixers.util.Function16;
+using DataFixerUpper.Datafixers.util.Function3;
+using DataFixerUpper.Datafixers.util.Function4;
+using DataFixerUpper.Datafixers.util.Function5;
+using DataFixerUpper.Datafixers.util.Function6;
+using DataFixerUpper.Datafixers.util.Function7;
+using DataFixerUpper.Datafixers.util.Function8;
+using DataFixerUpper.Datafixers.util.Function9;
 
-import java.util.function.BiFunction;
-import java.util.function.Function;
+using java.util.function.BiFunction;
+using java.util.function.Function;
 
 public interface Products {
     final class P1<F extends K1, T1> {

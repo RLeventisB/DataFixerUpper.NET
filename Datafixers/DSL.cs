@@ -1,38 +1,38 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.google.common.collect.Maps;
-import com.google.common.collect.ObjectArrays;
-import com.mojang.datafixers.schemas.Schema;
-import com.mojang.datafixers.types.Func;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.constant.EmptyPart;
-import com.mojang.datafixers.types.constant.EmptyPartPassthrough;
-import com.mojang.datafixers.types.templates.Check;
-import com.mojang.datafixers.types.templates.CompoundList;
-import com.mojang.datafixers.types.templates.Const;
-import com.mojang.datafixers.types.templates.Hook;
-import com.mojang.datafixers.types.templates.List;
-import com.mojang.datafixers.types.templates.Named;
-import com.mojang.datafixers.types.templates.Product;
-import com.mojang.datafixers.types.templates.RecursivePoint;
-import com.mojang.datafixers.types.templates.Sum;
-import com.mojang.datafixers.types.templates.Tag;
-import com.mojang.datafixers.types.templates.TaggedChoice;
-import com.mojang.datafixers.types.templates.TypeTemplate;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.datafixers.util.Unit;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.Dynamic;
-import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
+using com.google.common.collect.Maps;
+using com.google.common.collect.ObjectArrays;
+using DataFixerUpper.Datafixers.schemas.Schema;
+using DataFixerUpper.Datafixers.types.Func;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.constant.EmptyPart;
+using DataFixerUpper.Datafixers.types.constant.EmptyPartPassthrough;
+using DataFixerUpper.Datafixers.types.templates.Check;
+using DataFixerUpper.Datafixers.types.templates.CompoundList;
+using DataFixerUpper.Datafixers.types.templates.Const;
+using DataFixerUpper.Datafixers.types.templates.Hook;
+using DataFixerUpper.Datafixers.types.templates.List;
+using DataFixerUpper.Datafixers.types.templates.Named;
+using DataFixerUpper.Datafixers.types.templates.Product;
+using DataFixerUpper.Datafixers.types.templates.RecursivePoint;
+using DataFixerUpper.Datafixers.types.templates.Sum;
+using DataFixerUpper.Datafixers.types.templates.Tag;
+using DataFixerUpper.Datafixers.types.templates.TaggedChoice;
+using DataFixerUpper.Datafixers.types.templates.TypeTemplate;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Unit;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.Dynamic;
+using it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 
-import java.util.Arrays;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.stream.Stream;
+using java.util.Arrays;
+using java.util.Map;
+using java.util.function.Function;
+using java.util.function.Supplier;
+using java.util.stream.Stream;
 
 public interface DSL {
     interface TypeReference {

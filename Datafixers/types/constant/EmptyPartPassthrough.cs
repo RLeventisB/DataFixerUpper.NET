@@ -1,15 +1,15 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.constant;
+namespace DataFixerUpper.Datafixers.types.constant;
 
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.templates.TypeTemplate;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.Dynamic;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.templates.TypeTemplate;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.Dynamic;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.Optional;
+using java.util.Optional;
 
 public final class EmptyPartPassthrough extends Type<Dynamic<?>> {
     @Override

@@ -1,13 +1,13 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import it.unimi.dsi.fastutil.objects.Object2IntArrayMap;
-import it.unimi.dsi.fastutil.objects.Object2IntMap;
+using it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
+using it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+using it.unimi.dsi.fastutil.objects.Object2IntArrayMap;
+using it.unimi.dsi.fastutil.objects.Object2IntMap;
 
-import java.util.stream.Stream;
+using java.util.stream.Stream;
 
 public final class KeyCompressor<T> {
     private final Int2ObjectMap<T> decompress = new Int2ObjectArrayMap<>();

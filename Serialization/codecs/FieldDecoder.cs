@@ -1,15 +1,15 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Decoder;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.MapDecoder;
-import com.mojang.serialization.MapLike;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.Decoder;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.MapDecoder;
+using DataFixerUpper.Serialization.MapLike;
 
-import java.util.Objects;
-import java.util.stream.Stream;
+using java.util.Objects;
+using java.util.stream.Stream;
 
 public final class FieldDecoder<A> extends MapDecoder.Implementation<A> {
     protected final String name;

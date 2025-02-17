@@ -1,23 +1,23 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.ImmutableMap;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.collect.ImmutableMap;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.nio.ByteBuffer;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+using java.nio.ByteBuffer;
+using java.util.List;
+using java.util.Map;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.concurrent.atomic.AtomicReference;
+using java.util.function.BiConsumer;
+using java.util.function.Consumer;
+using java.util.function.Function;
+using java.util.stream.Collectors;
+using java.util.stream.IntStream;
+using java.util.stream.LongStream;
+using java.util.stream.Stream;
 
 public interface DynamicOps<T> {
     T empty();

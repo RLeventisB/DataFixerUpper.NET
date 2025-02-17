@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.families;
+namespace DataFixerUpper.Datafixers.types.families;
 
-import com.mojang.datafixers.FamilyOptic;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.types.Type;
+using DataFixerUpper.Datafixers.FamilyOptic;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.types.Type;
 
-import java.util.function.IntFunction;
+using java.util.function.IntFunction;
 
 public interface TypeFamily {
     Type<?> apply(final int index);

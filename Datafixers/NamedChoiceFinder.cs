@@ -1,15 +1,15 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.templates.Tag;
-import com.mojang.datafixers.types.templates.TaggedChoice;
-import com.mojang.datafixers.util.Either;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.templates.Tag;
+using DataFixerUpper.Datafixers.types.templates.TaggedChoice;
+using DataFixerUpper.Datafixers.util.Either;
 
-import java.util.Objects;
+using java.util.Objects;
 
-import static com.mojang.datafixers.TypedOptic.tagged;
+using static DataFixerUpper.Datafixers.TypedOptic.tagged;
 
 final class NamedChoiceFinder<FT> implements OpticFinder<FT> {
     private final String name;

@@ -1,22 +1,22 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.google.common.collect.Lists;
-import com.mojang.datafixers.functions.PointFreeRule;
-import com.mojang.datafixers.schemas.Schema;
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Dynamic;
-import it.unimi.dsi.fastutil.ints.Int2ObjectSortedMap;
-import it.unimi.dsi.fastutil.ints.IntSortedSet;
-import it.unimi.dsi.fastutil.longs.Long2ObjectMap;
-import it.unimi.dsi.fastutil.longs.Long2ObjectMaps;
-import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+using com.google.common.collect.Lists;
+using DataFixerUpper.Datafixers.functions.PointFreeRule;
+using DataFixerUpper.Datafixers.schemas.Schema;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.Dynamic;
+using it.unimi.dsi.fastutil.ints.Int2ObjectSortedMap;
+using it.unimi.dsi.fastutil.ints.IntSortedSet;
+using it.unimi.dsi.fastutil.longs.Long2ObjectMap;
+using it.unimi.dsi.fastutil.longs.Long2ObjectMaps;
+using it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
+using org.slf4j.Logger;
+using org.slf4j.LoggerFactory;
 
-import java.util.List;
+using java.util.List;
 
 /*
  * Optimizing functions

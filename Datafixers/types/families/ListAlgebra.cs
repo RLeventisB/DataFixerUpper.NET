@@ -1,13 +1,13 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.families;
+namespace DataFixerUpper.Datafixers.types.families;
 
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.functions.PointFree;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.functions.PointFree;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
+using java.util.List;
+using java.util.Objects;
+using java.util.stream.Collectors;
 
 public final class ListAlgebra implements Algebra {
     private final String name;

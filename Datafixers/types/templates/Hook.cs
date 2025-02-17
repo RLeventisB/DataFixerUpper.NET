@@ -1,26 +1,26 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.templates;
+namespace DataFixerUpper.Datafixers.types.templates;
 
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.FamilyOptic;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypeRewriteRule;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.families.RecursiveTypeFamily;
-import com.mojang.datafixers.types.families.TypeFamily;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.Lifecycle;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.FamilyOptic;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypeRewriteRule;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.families.RecursiveTypeFamily;
+using DataFixerUpper.Datafixers.types.families.TypeFamily;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.Lifecycle;
 
-import javax.annotation.Nullable;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.IntFunction;
+using javax.annotation.Nullable;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.IntFunction;
 
 public record Hook(TypeTemplate element, HookFunction preRead, HookFunction postWrite) implements TypeTemplate {
     public interface HookFunction {

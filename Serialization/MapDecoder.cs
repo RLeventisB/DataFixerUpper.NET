@@ -1,17 +1,17 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+using javax.annotation.Nullable;
+using java.util.ArrayList;
+using java.util.List;
+using java.util.Optional;
+using java.util.function.Consumer;
+using java.util.function.Function;
+using java.util.stream.IntStream;
+using java.util.stream.Stream;
 
 public interface MapDecoder<A> extends Keyable {
     <T> DataResult<A> decode(DynamicOps<T> ops, MapLike<T> input);

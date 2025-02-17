@@ -1,37 +1,37 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.types.Func;
-import com.mojang.datafixers.types.constant.EmptyPart;
-import com.mojang.datafixers.types.families.Algebra;
-import com.mojang.datafixers.types.families.ListAlgebra;
-import com.mojang.datafixers.types.families.RecursiveTypeFamily;
-import com.mojang.datafixers.types.templates.Product;
-import com.mojang.datafixers.types.templates.Sum;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
+using com.google.common.collect.Lists;
+using com.google.common.collect.Sets;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.types.Func;
+using DataFixerUpper.Datafixers.types.constant.EmptyPart;
+using DataFixerUpper.Datafixers.types.families.Algebra;
+using DataFixerUpper.Datafixers.types.families.ListAlgebra;
+using DataFixerUpper.Datafixers.types.families.RecursiveTypeFamily;
+using DataFixerUpper.Datafixers.types.templates.Product;
+using DataFixerUpper.Datafixers.types.templates.Sum;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.BitSet;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
-import java.util.function.Function;
-import java.util.function.Supplier;
+using java.util.ArrayDeque;
+using java.util.Arrays;
+using java.util.BitSet;
+using java.util.Collections;
+using java.util.Deque;
+using java.util.List;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.Set;
+using java.util.function.Function;
+using java.util.function.Supplier;
 
 public interface PointFreeRule {
     <A> Optional<? extends PointFree<A>> rewrite(final PointFree<A> expr);

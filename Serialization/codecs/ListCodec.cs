@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.mojang.datafixers.util.Pair;
-import com.mojang.datafixers.util.Unit;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.Lifecycle;
-import com.mojang.serialization.ListBuilder;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Unit;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.Lifecycle;
+using DataFixerUpper.Serialization.ListBuilder;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Stream;
+using java.util.ArrayList;
+using java.util.List;
+using java.util.stream.Stream;
 
 public record ListCodec<E>(Codec<E> elementCodec, int minSize, int maxSize) implements Codec<List<E>> {
     private <R> DataResult<R> createTooShortError(final int size) {

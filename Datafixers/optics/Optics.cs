@@ -1,25 +1,25 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
-import com.mojang.datafixers.FunctionType;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.optics.profunctors.AffineP;
-import com.mojang.datafixers.optics.profunctors.Cartesian;
-import com.mojang.datafixers.optics.profunctors.Cocartesian;
-import com.mojang.datafixers.optics.profunctors.GetterP;
-import com.mojang.datafixers.optics.profunctors.Profunctor;
-import com.mojang.datafixers.optics.profunctors.TraversalP;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.FunctionType;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.optics.profunctors.AffineP;
+using DataFixerUpper.Datafixers.optics.profunctors.Cartesian;
+using DataFixerUpper.Datafixers.optics.profunctors.Cocartesian;
+using DataFixerUpper.Datafixers.optics.profunctors.GetterP;
+using DataFixerUpper.Datafixers.optics.profunctors.Profunctor;
+using DataFixerUpper.Datafixers.optics.profunctors.TraversalP;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.function.Supplier;
+using java.util.Optional;
+using java.util.function.BiFunction;
+using java.util.function.Function;
+using java.util.function.Supplier;
 
 public abstract class Optics {
     public static <S, T, A, B> Adapter<S, T, A, B> toAdapter(final Optic<? super Profunctor.Mu, S, T, A, B> optic) {

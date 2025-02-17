@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.google.common.collect.ImmutableMap;
+using com.google.common.collect.ImmutableMap;
 
-import java.util.function.UnaryOperator;
+using java.util.function.UnaryOperator;
 
 public interface RecordBuilder<T> {
     DynamicOps<T> ops();

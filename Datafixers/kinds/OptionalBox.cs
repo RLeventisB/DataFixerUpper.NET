@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Function;
+using java.util.Optional;
+using java.util.function.BiFunction;
+using java.util.function.Function;
 
 public final class OptionalBox<T> implements App<OptionalBox.Mu, T> {
     public static final class Mu implements K1 {}

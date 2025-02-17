@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import java.util.function.Function;
+using java.util.function.Function;
 
 public interface Traversable<T extends K1, Mu extends Traversable.Mu> extends Functor<T, Mu> {
     static <F extends K1, Mu extends Traversable.Mu> Traversable<F, Mu> unbox(final App<Mu, F> proofBox) {

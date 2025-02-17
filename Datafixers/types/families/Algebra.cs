@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.families;
+namespace DataFixerUpper.Datafixers.types.families;
 
-import com.mojang.datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.RewriteResult;
 
 public interface Algebra {
 //    TypeTemplate template();

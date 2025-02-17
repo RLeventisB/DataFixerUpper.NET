@@ -1,11 +1,11 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.util.Either;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.util.Either;
 
-import javax.annotation.Nullable;
+using javax.annotation.Nullable;
 
 public interface OpticFinder<FT> {
     Type<FT> type();

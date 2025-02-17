@@ -1,15 +1,15 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.optics;
+namespace DataFixerUpper.Datafixers.optics;
 
-import com.mojang.datafixers.FunctionType;
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.kinds.K2;
-import com.mojang.datafixers.optics.profunctors.Cartesian;
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.FunctionType;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.kinds.K2;
+using DataFixerUpper.Datafixers.optics.profunctors.Cartesian;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.util.function.Function;
+using java.util.function.Function;
 
 public interface Lens<S, T, A, B> extends App2<Lens.Mu<A, B>, S, T>, Optic<Cartesian.Mu, S, T, A, B> {
     final class Mu<A, B> implements K2 {}

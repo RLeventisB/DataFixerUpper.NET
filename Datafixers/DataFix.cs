@@ -1,21 +1,21 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.mojang.datafixers.schemas.Schema;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.Dynamic;
-import com.mojang.serialization.DynamicOps;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+using DataFixerUpper.Datafixers.schemas.Schema;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.Dynamic;
+using DataFixerUpper.Serialization.DynamicOps;
+using org.slf4j.Logger;
+using org.slf4j.LoggerFactory;
 
-import javax.annotation.Nullable;
-import java.util.BitSet;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Function;
+using javax.annotation.Nullable;
+using java.util.BitSet;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.concurrent.atomic.AtomicReference;
+using java.util.function.Function;
 
 public abstract class DataFix {
     private static final Logger LOGGER = LoggerFactory.getLogger(DataFix.class);

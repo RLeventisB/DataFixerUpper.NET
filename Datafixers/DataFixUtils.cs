@@ -1,12 +1,12 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import java.nio.ByteBuffer;
-import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
-import java.util.function.UnaryOperator;
+using java.nio.ByteBuffer;
+using java.util.Optional;
+using java.util.function.Consumer;
+using java.util.function.Supplier;
+using java.util.function.UnaryOperator;
 
 public class DataFixUtils {
     private DataFixUtils() {

@@ -1,10 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.kinds;
+namespace DataFixerUpper.Datafixers.kinds;
 
-import com.google.common.collect.ImmutableList;
+using com.google.common.collect.ImmutableList;
 
-import java.util.List;
+using java.util.List;
 
 public interface Monoid<T> {
     T point();

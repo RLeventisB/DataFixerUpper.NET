@@ -1,34 +1,34 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.types.families;
+namespace DataFixerUpper.Datafixers.types.families;
 
-import com.google.common.collect.Interner;
-import com.google.common.collect.Interners;
-import com.google.common.collect.Lists;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.FamilyOptic;
-import com.mojang.datafixers.RewriteResult;
-import com.mojang.datafixers.TypeRewriteRule;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.View;
-import com.mojang.datafixers.functions.Functions;
-import com.mojang.datafixers.functions.PointFree;
-import com.mojang.datafixers.functions.PointFreeRule;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.templates.RecursivePoint;
-import com.mojang.datafixers.types.templates.TypeTemplate;
-import com.mojang.datafixers.util.Either;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import it.unimi.dsi.fastutil.ints.Int2ObjectMaps;
-import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
+using com.google.common.collect.Interner;
+using com.google.common.collect.Interners;
+using com.google.common.collect.Lists;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.FamilyOptic;
+using DataFixerUpper.Datafixers.RewriteResult;
+using DataFixerUpper.Datafixers.TypeRewriteRule;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.View;
+using DataFixerUpper.Datafixers.functions.Functions;
+using DataFixerUpper.Datafixers.functions.PointFree;
+using DataFixerUpper.Datafixers.functions.PointFreeRule;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.templates.RecursivePoint;
+using DataFixerUpper.Datafixers.types.templates.TypeTemplate;
+using DataFixerUpper.Datafixers.util.Either;
+using it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+using it.unimi.dsi.fastutil.ints.Int2ObjectMaps;
+using it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 
-import javax.annotation.Nullable;
-import java.util.BitSet;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.function.IntFunction;
+using javax.annotation.Nullable;
+using java.util.BitSet;
+using java.util.List;
+using java.util.Objects;
+using java.util.Optional;
+using java.util.function.Function;
+using java.util.function.IntFunction;
 
 public final class RecursiveTypeFamily implements TypeFamily {
     private static final Interner<TypeTemplate> TEMPLATE_INTERNER = Interners.newWeakInterner();

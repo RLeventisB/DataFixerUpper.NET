@@ -1,18 +1,18 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.util;
+namespace DataFixerUpper.Datafixers.util;
 
-import com.mojang.datafixers.kinds.App;
-import com.mojang.datafixers.kinds.Applicative;
-import com.mojang.datafixers.kinds.CartesianLike;
-import com.mojang.datafixers.kinds.K1;
-import com.mojang.datafixers.kinds.Traversable;
+using DataFixerUpper.Datafixers.kinds.App;
+using DataFixerUpper.Datafixers.kinds.Applicative;
+using DataFixerUpper.Datafixers.kinds.CartesianLike;
+using DataFixerUpper.Datafixers.kinds.K1;
+using DataFixerUpper.Datafixers.kinds.Traversable;
 
-import java.util.Map;
-import java.util.Objects;
-import java.util.function.Function;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+using java.util.Map;
+using java.util.Objects;
+using java.util.function.Function;
+using java.util.stream.Collector;
+using java.util.stream.Collectors;
 
 public class Pair<F, S> implements App<Pair.Mu<S>, F> {
     public static final class Mu<S> implements K1 {}

@@ -1,16 +1,16 @@
-package com.mojang.serialization.codecs;
+namespace DataFixerUpper.Serialization.codecs;
 
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.DynamicOps;
-import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.MapDecoder;
-import com.mojang.serialization.MapEncoder;
-import com.mojang.serialization.MapLike;
-import com.mojang.serialization.RecordBuilder;
+using DataFixerUpper.Serialization.Codec;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.DynamicOps;
+using DataFixerUpper.Serialization.MapCodec;
+using DataFixerUpper.Serialization.MapDecoder;
+using DataFixerUpper.Serialization.MapEncoder;
+using DataFixerUpper.Serialization.MapLike;
+using DataFixerUpper.Serialization.RecordBuilder;
 
-import java.util.function.Function;
-import java.util.stream.Stream;
+using java.util.function.Function;
+using java.util.stream.Stream;
 
 public class KeyDispatchCodec<K, V> extends MapCodec<V> {
     private static final String COMPRESSED_VALUE_KEY = "value";

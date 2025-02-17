@@ -1,25 +1,25 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.schemas;
+namespace DataFixerUpper.Datafixers.schemas;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.families.RecursiveTypeFamily;
-import com.mojang.datafixers.types.families.TypeFamily;
-import com.mojang.datafixers.types.templates.RecursivePoint;
-import com.mojang.datafixers.types.templates.TaggedChoice;
-import com.mojang.datafixers.types.templates.TypeTemplate;
-import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+using com.google.common.collect.Lists;
+using com.google.common.collect.Maps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.DataFixUtils;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.families.RecursiveTypeFamily;
+using DataFixerUpper.Datafixers.types.families.TypeFamily;
+using DataFixerUpper.Datafixers.types.templates.RecursivePoint;
+using DataFixerUpper.Datafixers.types.templates.TaggedChoice;
+using DataFixerUpper.Datafixers.types.templates.TypeTemplate;
+using it.unimi.dsi.fastutil.objects.Object2IntMap;
+using it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.function.Function;
-import java.util.function.Supplier;
+using java.util.List;
+using java.util.Map;
+using java.util.Set;
+using java.util.function.Function;
+using java.util.function.Supplier;
 
 public class Schema {
     protected final Object2IntMap<String> RECURSIVE_TYPES = new Object2IntOpenHashMap<>();

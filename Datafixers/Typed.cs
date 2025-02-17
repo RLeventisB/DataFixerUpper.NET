@@ -1,32 +1,32 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers;
+namespace DataFixerUpper.Datafixers;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.reflect.TypeToken;
-import com.mojang.datafixers.kinds.Const;
-import com.mojang.datafixers.kinds.IdF;
-import com.mojang.datafixers.kinds.Monoid;
-import com.mojang.datafixers.optics.Forget;
-import com.mojang.datafixers.optics.ForgetOpt;
-import com.mojang.datafixers.optics.Inj1;
-import com.mojang.datafixers.optics.Inj2;
-import com.mojang.datafixers.optics.Optics;
-import com.mojang.datafixers.optics.ReForgetC;
-import com.mojang.datafixers.optics.Traversal;
-import com.mojang.datafixers.optics.profunctors.TraversalP;
-import com.mojang.datafixers.types.Type;
-import com.mojang.datafixers.types.templates.RecursivePoint;
-import com.mojang.datafixers.util.Either;
-import com.mojang.datafixers.util.Pair;
-import com.mojang.serialization.DataResult;
-import com.mojang.serialization.Dynamic;
-import com.mojang.serialization.DynamicOps;
+using com.google.common.collect.ImmutableList;
+using com.google.common.reflect.TypeToken;
+using DataFixerUpper.Datafixers.kinds.Const;
+using DataFixerUpper.Datafixers.kinds.IdF;
+using DataFixerUpper.Datafixers.kinds.Monoid;
+using DataFixerUpper.Datafixers.optics.Forget;
+using DataFixerUpper.Datafixers.optics.ForgetOpt;
+using DataFixerUpper.Datafixers.optics.Inj1;
+using DataFixerUpper.Datafixers.optics.Inj2;
+using DataFixerUpper.Datafixers.optics.Optics;
+using DataFixerUpper.Datafixers.optics.ReForgetC;
+using DataFixerUpper.Datafixers.optics.Traversal;
+using DataFixerUpper.Datafixers.optics.profunctors.TraversalP;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Datafixers.types.templates.RecursivePoint;
+using DataFixerUpper.Datafixers.util.Either;
+using DataFixerUpper.Datafixers.util.Pair;
+using DataFixerUpper.Serialization.DataResult;
+using DataFixerUpper.Serialization.Dynamic;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+using java.util.List;
+using java.util.Optional;
+using java.util.function.Function;
+using java.util.stream.Collectors;
 
 public final class Typed<A> {
     protected final Type<A> type;

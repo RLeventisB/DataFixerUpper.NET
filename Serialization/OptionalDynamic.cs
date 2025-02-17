@@ -1,15 +1,15 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.serialization;
+namespace DataFixerUpper.Serialization;
 
-import com.mojang.datafixers.util.Pair;
+using DataFixerUpper.Datafixers.util.Pair;
 
-import java.nio.ByteBuffer;
-import java.util.Optional;
-import java.util.function.Function;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
-import java.util.stream.Stream;
+using java.nio.ByteBuffer;
+using java.util.Optional;
+using java.util.function.Function;
+using java.util.stream.IntStream;
+using java.util.stream.LongStream;
+using java.util.stream.Stream;
 
 @SuppressWarnings("unused")
 public final class OptionalDynamic<T> extends DynamicLike<T> {

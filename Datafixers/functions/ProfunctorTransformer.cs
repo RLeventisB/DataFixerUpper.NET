@@ -1,16 +1,16 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT license.
-package com.mojang.datafixers.functions;
+namespace DataFixerUpper.Datafixers.functions;
 
-import com.mojang.datafixers.DSL;
-import com.mojang.datafixers.FunctionType;
-import com.mojang.datafixers.TypedOptic;
-import com.mojang.datafixers.kinds.App2;
-import com.mojang.datafixers.types.Type;
-import com.mojang.serialization.DynamicOps;
+using DataFixerUpper.Datafixers.DSL;
+using DataFixerUpper.Datafixers.FunctionType;
+using DataFixerUpper.Datafixers.TypedOptic;
+using DataFixerUpper.Datafixers.kinds.App2;
+using DataFixerUpper.Datafixers.types.Type;
+using DataFixerUpper.Serialization.DynamicOps;
 
-import java.util.Objects;
-import java.util.function.Function;
+using java.util.Objects;
+using java.util.function.Function;
 
 final class ProfunctorTransformer<S, T, A, B> extends PointFree<Function<Function<A, B>, Function<S, T>>> {
     protected final TypedOptic<S, T, A, B> optic;
