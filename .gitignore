@@ -7,6 +7,9 @@
 
 ## Directory-based project format:
 .idea/
+bin/
+obj/
+Folder.DotSettings.user
 # if you remove the above rule, at least ignore the follwing:
 
 # User-specific stuff:
